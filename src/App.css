@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#MainApp,
+.container,
+.containerChild {
+  display: flex;
+}
+
+#MainApp {
+  max-width: 100vw;
+  min-height: 100vh;
+  color: white;
+  background-color: #272829;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 1em;
+  flex-direction: column;
+  width: 70%;
+  border: 2px solid #61677a;
+  align-items: center;
+}
+.container .containerChild {
+  margin: 1em 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 1em;
+  text-align: center;
+}
+.container .containerChild #browserLink {
+  color: white;
+  cursor: pointer;
+}
+.container .containerChild #browserLink:hover {
+  color: blue;
+}
+.container .homeBody {
+  flex-direction: row;
+}
+
+#Soal1 .containerChild {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+#Soal1 #subtract {
+  background-color: rgb(243, 59, 59);
+}
+#Soal1 #add {
+  background-color: rgb(105, 220, 105);
+}
+#Soal1 #output {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#Soal1 button {
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 0.5em;
+}
+
+#Soal2 .containerChild #buttonContainer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#Soal2 .containerChild button {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  border: 0;
+}
+#Soal2 .containerChild #button1 {
+  background-color: green;
+}
+#Soal2 .containerChild #button2 {
+  background-color: red;
+}
+#Soal2 .containerChild #button3 {
+  background-color: yellow;
+}
+#Soal2 #timer {
+  padding: 0 1em;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+#Soal3 .containerChild input {
+  padding: 0.5em;
+  width: 100%;
+}
+#Soal3 .containerChild input:focus {
+  outline: #61677a;
+  border: 1px solid #61677a;
+}
+#Soal3 .containerChild ul li {
+  border-radius: 0.5em;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  background-color: #61677a;
+  list-style: none;
+}
+
+#Soal4 #Text {
+  display: none;
+}
+#Soal4 .containerChild.body {
+  flex-direction: row;
+}
+#Soal4 .containerChild.body textarea {
+  width: 50%;
+  height: 4em;
+  padding: 0.5em;
+}
+#Soal4 .containerChild.body button {
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+}/*# sourceMappingURL=App.css.map */

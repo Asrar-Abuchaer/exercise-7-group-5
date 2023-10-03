@@ -1,0 +1,153 @@
+$maincolor: #272829;
+$secondarycolor: #61677a;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#MainApp,
+.container,
+.containerChild {
+  display: flex;
+}
+
+#MainApp {
+  max-width: 100vw;
+  min-height: 100vh;
+  color: white;
+  background-color: $maincolor;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border-radius: 1em;
+  flex-direction: column;
+  width: 70%;
+  border: 2px solid $secondarycolor;
+  align-items: center;
+  .containerChild {
+    margin: 1em 1em;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 1em;
+    text-align: center;
+    #browserLink {
+      color: white;
+      cursor: pointer;
+    }
+    #browserLink:hover {
+      color: blue;
+    }
+  }
+  .homeBody {
+    flex-direction: row;
+  }
+}
+#Soal1 {
+  .containerChild {
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    text-align: center;
+  }
+
+  #subtract {
+    background-color: rgb(243, 59, 59);
+  }
+
+  #add {
+    background-color: rgb(105, 220, 105);
+  }
+
+  #output {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  button {
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 0.5em;
+  }
+}
+#Soal2 {
+  .containerChild {
+    #buttonContainer {
+      width: 100%;
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    button {
+      padding: 1em 2em;
+      border-radius: 0.5em;
+      border: 0;
+    }
+    #button1 {
+      background-color: green;
+    }
+    #button2 {
+      background-color: red;
+    }
+    #button3 {
+      background-color: yellow;
+    }
+  }
+
+  #timer {
+    padding: 0 1em;
+    font-size: 100px;
+    font-weight: 700;
+  }
+}
+
+#Soal3 {
+  .containerChild {
+    input {
+      padding: 0.5em;
+      width: 100%;
+    }
+    input:focus {
+      outline: $secondarycolor;
+      border: 1px solid $secondarycolor;
+    }
+    ul {
+      li {
+        border-radius: 0.5em;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+        background-color: $secondarycolor;
+        list-style: none;
+      }
+    }
+  }
+}
+
+#Soal4 {
+  #Text {
+    display: none;
+  }
+  .containerChild.body {
+    flex-direction: row;
+    textarea {
+      width: 50%;
+      height: 4em;
+      padding: 0.5em;
+    }
+    button {
+      border: 0;
+      border-radius: 0.5em;
+      padding: 1em 2em;
+    }
+  }
+}
